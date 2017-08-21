@@ -1,24 +1,6 @@
-notifications:
-  email: false
-  irc:
-    channels:
-      - "irc.freenode.net#fixmystreet"
-    use_notice: true
-    skip_join: true
-  slack: mysociety:1M2CXeMwHIf8SrGoKyZrz0jO
-  webhooks:
-    urls:
-      - https://webhooks.gitter.im/e/863c1892a6a51e5a3b3c
-
 language: perl
 perl:
   - "5.14" # wheezy, precise
-  - "5.18" # trusty
-  - "5.20" # jessie
-  - "5.22" # xenial
-  - "5.24" # stretch, zesty
-# Params::Classify breaks in 5.26, and Lingua::EN::Tagger needs upgrading
-#  - "5.26"
 
 env:
   global:
