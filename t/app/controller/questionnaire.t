@@ -446,11 +446,4 @@ FixMyStreet::override_config {
     is $plain->header('Content-Type'), 'text/plain; charset="utf-8"', 'email is in right encoding';
 };
 
-FixMyStreet::override_config {
-    ALLOWED_COBRANDS => [ 'default' ],
-}, sub {
-    $mech->get_ok('/');
-};
-
-
 done_testing();
